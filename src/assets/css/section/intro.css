@@ -12,9 +12,9 @@
     background-color: aliceblue;
 }
 .intro__title {
-    font-size: 5vw;
+    font-size: 3vw;
     text-transform: uppercase;
-    line-height: 1;
+    line-height: 1.5;
     font-weight: 800;
     white-space: nowrap;
     text-indent: -0.5vw;
@@ -62,7 +62,85 @@
 }
 
 
+.image-wrapper {
+    position: relative;
+    display: inline-block; /* 이미지와 텍스트를 인라인 블록으로 설정 */
+    width: 30%; /* 이미지의 너비 지정 */
+    height: 100%; /* 이미지의 높이 지정 */
+}
 
+.image-wrapper img {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%; /* 이미지를 동그랗게 만듦 */
+    transition: transform 0.3s ease; /* 부드러운 변환 효과 */
+}
+
+.image-wrapper .hover-text {
+    position: absolute;
+    left: -40%;
+    top: -20%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap; /* 텍스트가 줄바꿈 되지 않게 처리 */
+    opacity: 0; /* 기본 상태에서는 텍스트를 보이지 않게 함 */
+    transition: opacity 0.3s ease; /* 부드러운 투명도 변환 효과 */
+    pointer-events: none; /* 마우스 이벤트 방지 */
+    font-size: 16px;
+    background-color: wheat;
+}
+
+.image-wrapper:hover .hover-text {
+    opacity: 1; /* 마우스를 가져다 대면 텍스트를 보이게 함 */
+}
+
+/* 이미지에 마우스를 올릴 때 약간 확대 효과를 줌 */
+.image-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+.image-wrapperr {
+    position: relative;
+    display: inline-block; /* 이미지와 텍스트를 인라인 블록으로 설정 */
+    width: 30%; /* 이미지의 너비 지정 */
+    height: 100%; /* 이미지의 높이 지정 */
+}
+
+.image-wrapperr img {
+    width: 60%;
+    height: 100%;
+    border-radius: 0%; /* 이미지를 동그랗게 만듦 */
+    transition: transform 0.3s ease; /* 부드러운 변환 효과 */
+}
+
+.image-wrapperr .hover-text {
+    position: absolute;
+    left: -40%;
+    top: -20%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap; /* 텍스트가 줄바꿈 되지 않게 처리 */
+    opacity: 0; /* 기본 상태에서는 텍스트를 보이지 않게 함 */
+    transition: opacity 0.3s ease; /* 부드러운 투명도 변환 효과 */
+    pointer-events: none; /* 마우스 이벤트 방지 */
+    font-size: 16px;
+    background-color: wheat;
+}
+
+.image-wrapperr:hover .hover-text {
+    opacity: 1; /* 마우스를 가져다 대면 텍스트를 보이게 함 */
+}
+
+/* 이미지에 마우스를 올릴 때 약간 확대 효과를 줌 */
+.image-wrapperr:hover img {
+    transform: scale(1.1);
+}
+
+
+.OROR .projectA .helpcenter{
+    width: 10%;
+}
 @media (max-width: 800px){
     .intro__inner {
         justify-content: center;
