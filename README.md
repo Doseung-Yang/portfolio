@@ -1,11 +1,4 @@
-# FE_ 개발자 양도승입니다.
+# FE_ 개발자 양도승 포트폴리오 입니다. #
+# vite, javascript 를 통해 개발하였습니다. # 
 
-
-
-
-export default {
-    root: "src",
-    build: {
-    outDir: "../public",
-    },
-};
+최종 업데이트 2023-12-26
